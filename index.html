@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Premium Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="background-blur"></div>
+
+    <div class="player">
+
+        <!-- Album Cover -->
+
+        <div class="album">
+
+            <img id="cover" src="images/cover1.jpg" alt="Album Cover">
+
+        </div>
+
+        <!-- Song Info -->
+
+        <div class="music-info">
+
+            <h2 id="title">Dreams</h2>
+
+            <p id="artist">Artist One</p>
+
+        </div>
+
+        <!-- Progress -->
+
+        <div class="progress-container" id="progress-container">
+
+            <div class="progress" id="progress"></div>
+
+        </div>
+
+        <div class="time">
+
+            <span id="current-time">0:00</span>
+
+            <span id="duration">0:00</span>
+
+        </div>
+
+        <!-- Controls -->
+
+        <div class="controls">
+
+            <button id="prev">
+
+                <i class="fa-solid fa-backward-step"></i>
+
+            </button>
+
+            <button id="play" class="play-btn">
+
+                <i class="fa-solid fa-play"></i>
+
+            </button>
+
+            <button id="next">
+
+                <i class="fa-solid fa-forward-step"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Volume -->
+
+        <div class="volume-section">
+
+            <i class="fa-solid fa-volume-high"></i>
+
+            <input type="range"
+
+                id="volume"
+
+                min="0"
+
+                max="1"
+
+                value="1"
+
+                step="0.01">
+
+        </div>
+
+        <!-- Playlist -->
+
+        <div class="playlist">
+
+            <h3>Playlist</h3>
+
+            <ul id="playlist"></ul>
+
+        </div>
+
+    </div>
+
+    <audio id="audio"></audio>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
